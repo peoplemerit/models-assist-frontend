@@ -1,0 +1,7 @@
+/* Basic reset */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; }
+body, h1, h2, h3, h4, p, ul, ol, figure { margin: 0; }
+img, svg, video { display: block; max-width: 100%; }
+button, input, select, textarea { font: inherit; }
+:focus-visible { outline: var(--focus-ring); outline-offset: 2px; }
