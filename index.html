@@ -1,8 +1,3 @@
-<!--
-  index.html composes partials at runtime via assets/js/app.js
-  For other pages, copy templates/base.html to a new file and update the
-  main <section> include to the appropriate section file.
--->
 <!doctype html>
 <html lang="en" class="">
 <head>
@@ -11,39 +6,40 @@
   <meta name="color-scheme" content="light dark" />
   <title>PMERIT — Home</title>
 
-  <link rel="stylesheet" href="/assets/css/00-reset.css">
-  <link rel="stylesheet" href="/assets/css/01-tokens.css">
-  <link rel="stylesheet" href="/assets/css/02-theme-pmerit.css">
-  <link rel="stylesheet" href="/assets/css/10-base.css">
-  <link rel="stylesheet" href="/assets/css/20-layout.css">
-  <link rel="stylesheet" href="/assets/css/30-components.css">
-  <link rel="stylesheet" href="/assets/css/40-modules.css">
-  <link rel="stylesheet" href="/assets/css/90-responsive.css">
+  <!-- NOTE: relative paths (no leading /) so GitHub Pages project sites work -->
+  <link rel="stylesheet" href="assets/css/00-reset.css">
+  <link rel="stylesheet" href="assets/css/01-tokens.css">
+  <link rel="stylesheet" href="assets/css/02-theme-pmerit.css">
+  <link rel="stylesheet" href="assets/css/10-base.css">
+  <link rel="stylesheet" href="assets/css/20-layout.css">
+  <link rel="stylesheet" href="assets/css/30-components.css">
+  <link rel="stylesheet" href="assets/css/40-modules.css">
+  <link rel="stylesheet" href="assets/css/90-responsive.css">
 </head>
 <body>
-  <div data-include="/partials/header.html"></div>
+  <div data-include="partials/header.html"></div>
 
   <div id="estate" class="estate">
-    <aside id="aside-left" class="aside-left" data-include="/partials/aside-left.html" hidden></aside>
+    <aside id="aside-left" class="aside-left" data-include="partials/aside-left.html" hidden></aside>
 
     <main id="main" class="main">
-      <section data-include="/sections/main-chat.html"></section>
-      <section id="mobile-accordions" data-include="/partials/mobile-accordions.html"></section>
+      <section data-include="sections/main-chat.html"></section>
+      <section id="mobile-accordions" data-include="partials/mobile-accordions.html"></section>
     </main>
 
-    <aside id="aside-right" class="aside-right" data-include="/partials/aside-right.html" hidden></aside>
+    <aside id="aside-right" class="aside-right" data-include="partials/aside-right.html" hidden></aside>
   </div>
 
-  <div data-include="/partials/footer.html"></div>
+  <div data-include="partials/footer.html"></div>
 
   <div id="modals">
-    <div data-include="/partials/modals/sign-in.html"></div>
-    <div data-include="/partials/modals/sign-up.html"></div>
-    <div data-include="/partials/modals/voices.html"></div>
-    <div data-include="/partials/modals/tracks.html"></div>
-    <div data-include="/partials/modals/assessment.html"></div>
+    <div data-include="partials/modals/sign-in.html"></div>
+    <div data-include="partials/modals/sign-up.html"></div>
+    <div data-include="partials/modals/voices.html"></div>
+    <div data-include="partials/modals/tracks.html"></div>
+    <div data-include="partials/modals/assessment.html"></div>
   </div>
 
-  <script type="module" src="/assets/js/app.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
 </body>
 </html>
