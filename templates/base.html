@@ -6,49 +6,40 @@
   <meta name="color-scheme" content="light dark" />
   <title>PMERIT</title>
 
-  <!-- Fonts (optional) -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"> -->
-
-  <!-- CSS layers (brand already created in 01 & 02) -->
-  <link rel="stylesheet" href="/assets/css/00-reset.css">
-  <link rel="stylesheet" href="/assets/css/01-tokens.css">
-  <link rel="stylesheet" href="/assets/css/02-theme-pmerit.css">
-  <link rel="stylesheet" href="/assets/css/10-base.css">
-  <link rel="stylesheet" href="/assets/css/20-layout.css">
-  <link rel="stylesheet" href="/assets/css/30-components.css">
-  <link rel="stylesheet" href="/assets/css/40-modules.css">
-  <link rel="stylesheet" href="/assets/css/90-responsive.css">
+  <!-- NOTE: relative paths (no leading /) -->
+  <link rel="stylesheet" href="assets/css/00-reset.css">
+  <link rel="stylesheet" href="assets/css/01-tokens.css">
+  <link rel="stylesheet" href="assets/css/02-theme-pmerit.css">
+  <link rel="stylesheet" href="assets/css/10-base.css">
+  <link rel="stylesheet" href="assets/css/20-layout.css">
+  <link rel="stylesheet" href="assets/css/30-components.css">
+  <link rel="stylesheet" href="assets/css/40-modules.css">
+  <link rel="stylesheet" href="assets/css/90-responsive.css">
 </head>
 <body>
-  <!-- Header -->
-  <div data-include="/partials/header.html"></div>
+  <div data-include="partials/header.html"></div>
 
-  <!-- Estate grid: left / main / right (mobile-first: main + mobile-accordions) -->
   <div id="estate" class="estate">
-    <aside id="aside-left" class="aside-left" data-include="/partials/aside-left.html" hidden></aside>
+    <aside id="aside-left" class="aside-left" data-include="partials/aside-left.html" hidden></aside>
 
     <main id="main" class="main">
-      <section data-include="/sections/main-chat.html"></section>
-      <!-- Mobile accordions appear below main on small screens -->
-      <section id="mobile-accordions" data-include="/partials/mobile-accordions.html"></section>
+      <section data-include="sections/main-chat.html"></section>
+      <section id="mobile-accordions" data-include="partials/mobile-accordions.html"></section>
     </main>
 
-    <aside id="aside-right" class="aside-right" data-include="/partials/aside-right.html" hidden></aside>
+    <aside id="aside-right" class="aside-right" data-include="partials/aside-right.html" hidden></aside>
   </div>
 
-  <!-- Footer -->
-  <div data-include="/partials/footer.html"></div>
+  <div data-include="partials/footer.html"></div>
 
-  <!-- Modals (loaded but not displayed until triggered) -->
   <div id="modals">
-    <div data-include="/partials/modals/sign-in.html"></div>
-    <div data-include="/partials/modals/sign-up.html"></div>
-    <div data-include="/partials/modals/voices.html"></div>
-    <div data-include="/partials/modals/tracks.html"></div>
-    <div data-include="/partials/modals/assessment.html"></div>
+    <div data-include="partials/modals/sign-in.html"></div>
+    <div data-include="partials/modals/sign-up.html"></div>
+    <div data-include="partials/modals/voices.html"></div>
+    <div data-include="partials/modals/tracks.html"></div>
+    <div data-include="partials/modals/assessment.html"></div>
   </div>
 
-  <script type="module" src="/assets/js/app.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
 </body>
 </html>
