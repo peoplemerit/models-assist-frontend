@@ -1,0 +1,8 @@
+/* Page grid */
+.estate { display: grid; gap: var(--space-4); width: 100%; max-width: var(--container-max); margin: 0 auto; padding: var(--space-4); flex: 1; }
+.aside-left, .aside-right { display: grid; gap: var(--space-4); align-content: start; }
+.main { display: grid; gap: var(--space-4); }
+
+/* Header nav */
+.site-nav a { color: var(--text-primary); text-decoration: none; }
+.site-nav a:hover { text-decoration: underline; }
