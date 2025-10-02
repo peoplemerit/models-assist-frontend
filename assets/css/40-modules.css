@@ -1,0 +1,12 @@
+/* Chat module */
+.panel.chat { display: grid; gap: var(--space-3); }
+.panel-header { display: flex; align-items: center; justify-content: space-between; }
+.title { font-size: var(--fs-h1); }
+.chat-stream { border: 1px solid var(--border); background: var(--pmr-surface-2); border-radius: var(--radius-lg);
+  padding: var(--space-3); min-height: 40vh; display: grid; gap: .5rem; overflow: auto; }
+.bubble { max-width: 65ch; padding: .6rem .8rem; border-radius: var(--radius-lg); width: fit-content; box-shadow: var(--shadow-1); }
+.bubble.bot { background: var(--bg); border: 1px solid var(--border); }
+.bubble.user { background: var(--primary); color: var(--on-primary); margin-left: auto; }
+
+.chat-input { display: grid; grid-template-columns: 1fr auto; gap: .5rem; }
+.chat-input input { width: 100%; }
